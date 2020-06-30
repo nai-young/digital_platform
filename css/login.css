@@ -1,0 +1,43 @@
+:root {
+    --dark-color: rgb(43, 42, 42);
+    --color-red: rgb(221, 42, 42);
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-color);
+}
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1;
+}
+.form input {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+.form label {
+    font-size: 18px;
+}
+.form button {
+    cursor: pointer;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 5px;
+    background-color: var(--color-red);
+    box-shadow: .5px .5px 2px white;
+}
+.form > a {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}

@@ -2,15 +2,17 @@
 
 :root {
     --navbar-height: 60px;
+    --color-red: rgb(221, 42, 42);
+    --color-dark: rgb(43, 42, 42);
 }
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    background-color: rgb(43, 42, 42);
+    background-color: #2b2a2a;
 }
 .logo {
-    width: calc( 2px * var(--navbar-height));
+    width: calc( 2.5px * var(--navbar-height));
     height: var(--navbar-height);
     margin: 0 auto;
 }
@@ -22,10 +24,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-}
-.navbar {
     display: flex;
     justify-content:  space-between;
+    padding: 0 10px;
 }
 .navbar .burger-label {
     width: 50px;
@@ -73,7 +74,7 @@ body {
         text-decoration: none;
         color: #fff;
         line-height: var(--navbar-height);
-        padding: 0 1rem;
+        padding: 0 .7rem;
     }
     .navbar-item {
         height: var(--navbar-height);
@@ -90,5 +91,31 @@ body {
     }
     .logo {
         margin: 0;
+    }
+    .navbar input[type="text"],
+    .navbar ul:last-of-type {
+        display: block;
+    }
+    .navbar input[type="text"]{
+        height: 50%;
+        width: 17%;
+        margin: auto 1.5rem;
+        background-color: rgb(228, 226, 226);
+        padding: 0 5px;
+        font-size: .8rem;
+        color: #fff;
+        background: none;
+        border: none;
+        border-bottom: 1.3px solid rgb(233, 232, 232);
+       
+
+    }
+    .navbar ul:last-of-type {
+        line-height: var(--navbar-height);
+        list-style: none;
+    }
+    .navbar ul:last-of-type > li > a{
+        color: rgb(221, 42, 42);
+        text-decoration: none;
     }
 }

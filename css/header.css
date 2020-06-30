@@ -9,20 +9,36 @@
     border-bottom: 1px solid rgb(58, 57, 57);
 }
 .genero {
-    margin: 0;
+    padding: 0 1rem;
     width: 25%;
     float: right;
-    text-align: center;
-    border-left: 1px solid rgb(58, 57, 57);
+    text-align: left;
+    border-left: 1px solid #3a3939;
 }
 
 .navbar-genero .genero-item {
     list-style: none;
-    padding: 7px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(58, 57, 57);
+}
+.navbar-genero .genero-item:last-child{
+    border: none;
 }
 .navbar-genero .genero-item a {
     text-decoration: none;
     color: rgb(245, 245, 245);
+}
+.navbar-genero .genero-item a::before {
+    content: "";
+   position: relative;
+   bottom: 5px;
+    border-bottom: 5px solid transparent;  /* izquierda flecha */
+    border-top: 5px solid transparent; /* derecha flecha */
+    border-left:9px solid white; /* base flecha y color*/
+    font-size:0px;
+    line-height: 10px;
+    margin: 0 5px;
+
 }
 .navbar-header {
     display: flex;
@@ -42,7 +58,7 @@
 
 .destacado {
     width: 70%;
-    margin-top: 25px;
+    margin: 25px 0 0 10px;
 }
 .destacado h1 {
     

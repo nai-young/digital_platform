@@ -3,76 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <title>GoVideo</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Log In</title>
 </head>
 <body>
-    <nav class="navbar">
-        <img src="./img/logo.jpg" alt="logo" class="logo">
-        <input type="checkbox" id="burger-checkbox">
-        <label for="burger-checkbox" class="burger-label"></label>
- 
-        <ul class="navbar-list">
-            <li class="navbar-item"><a href="#">Novedades</a></li>
-            <li class="navbar-item"><a href="#">Peliculas</a></li>
-            <li class="navbar-item"><a href="#">Series</a></li>
-            <li class="navbar-item"><a href="#">Favoritos</a></li>
-        </ul>
-        <input type="text" value="Buscar">
-        <ul>
-            <li><a href="#">Cerrar Sesión</a></li>
-        </ul>
-    </nav>
-    <header class="header">
-        <ul class="navbar-header">
-            <li><a href="#">Todo</a></li>
-            <li><a href="#">Películas</a></li>
-            <li><a href="#">Series</a></li>
-        </ul>
-        <section class="destacado">
-            <h1>Destacado</h1>
-            <div></div>
-        </section>
-        <section class="genero">
-            <h2>Género</h2>
-            <ul class="navbar-genero">
-                <li class="genero-item"><a href="#">Terror</a></li>
-                <li class="genero-item"><a href="#">Comedia</a></li>
-                <li class="genero-item"><a href="#">Animación</a></li>
-                <li class="genero-item"><a href="#">Infantil</a></li>
-                <li class="genero-item"><a href="#">Clásico</a></li>
-                <li class="genero-item"><a href="#">Drama</a></li>
-                <li class="genero-item"><a href="#">Romántico</a></li>
-            </ul>
-        </section>
-    </header>
     <main>
-        <section>
-            <h2>Películas de estreno</h2>
-            <div>
+        <form class="form" action="">
+            <label for="email">Email</label>
+            <input type="email" id="email">
 
-            </div>
-        </section>
-        <section>
-            <h2>Series de estreno</h2>
-            <div>
-
-            </div>
-        </section>
-        <section>
-            <h2>Todas las películas</h2>
-            <div>
-
-            </div>
-        </section>
-        <section>
-            <h2>Todas las series</h2>
-            <div>
-
-            </div>
-        </section>
+            <label for="password">Contraseña</label>
+            <input type="text" id="password">
+             
+            <button type="submit">Entrar</button>
+            <a href="#">Recordar Contraseña</a>
+        </form>
     </main>
 </body>
 </html>
