@@ -1,0 +1,49 @@
+
+.header {
+    margin-top: 100px;
+    width: 100vw;
+    height: 50vh;
+    display: block;
+    justify-content: space-between;
+    color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(58, 57, 57);
+}
+.genero {
+    margin: 0;
+    width: 25%;
+    float: right;
+    text-align: center;
+    border-left: 1px solid rgb(58, 57, 57);
+}
+
+.navbar-genero .genero-item {
+    list-style: none;
+    padding: 7px;
+}
+.navbar-genero .genero-item a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+.navbar-header {
+    display: flex;
+    flex-direction: row;
+    height: 25px;   
+}
+.navbar-header > li {
+    list-style: none;
+    padding: 10px;
+}
+.navbar-header > li > a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+/* Destacado */
+
+.destacado {
+    width: 70%;
+    margin-top: 25px;
+}
+.destacado h1 {
+    
+}

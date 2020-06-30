@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
     --navbar-height: 60px;
+}
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     background-color: rgb(43, 42, 42);
@@ -23,15 +28,15 @@ body {
     justify-content:  space-between;
 }
 .navbar .burger-label {
-    width: var(--navbar-height);
-    height: var(--navbar-height);
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 50px;
+    font-size: 45px;
     background-color: rgba(245, 24, 69, 0.719);
     border-radius: 50%;
-    margin: 10px 0 0 10px;
+    margin: 6px 0 0 7px;
   }
   .burger-label:before {
     content: '';
@@ -39,7 +44,7 @@ body {
     width: .8em;
     height: 0.11em;
     position: absolute;
-    left: 0.2em;
+    left: 0.15em;
     top: 0.25em;
     box-shadow: 0 0.25em 0 0 rgb(43, 42, 42), 0 0.5em 0 0 rgb(43, 42, 42);
   }
@@ -54,13 +59,28 @@ body {
 .navbar ul:last-of-type {
     display: none;
 }
-  
 
 @media all and (min-width: 768px) {
     .navbar-list {
         display: flex;
-        background-color: cadetblue;
         width: 40%;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    .navbar-item a {
+        text-decoration: none;
+        color: #fff;
+        line-height: var(--navbar-height);
+        padding: 0 1rem;
+    }
+    .navbar-item {
+        height: var(--navbar-height);
+    }
+    .navbar-item:hover{
+        background-color: white;
+        color: #222222;
     }
     .navbar .burger-label {
         display: none;
