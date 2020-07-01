@@ -2,42 +2,90 @@
     --dark-color: rgb(43, 42, 42);
     --color-red: rgb(221, 42, 42);
 }
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--dark-color);
+    background-image: url('../img/20215.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+img {
+    max-width: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 .form {
-    width: 50%;
+    width: 45%;
+   
     display: flex;
     flex-direction: column;
-    border: 2px solid gray;
-    margin: auto;
-    padding: 10px;
+    background-color: #2b2a2a;
+    padding: 15px;
     color: white;
     border-radius: 10px;
     box-shadow: 1;
 }
 .form input {
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: .5rem;
     margin-bottom: 2rem;
+    border-radius: 5px;
 }
 .form label {
-    font-size: 18px;
+    font-size: 20px;
 }
 .form button {
     cursor: pointer;
     width: 40%;
-    margin: 0 auto;
-    font-size: 16px;
+    margin: 1.5rem auto;
+    font-size: 20px;
     border-radius: 10px;
     border: none;
-    color: white;
-    padding: 5px;
+    padding: 10px;
     background-color: var(--color-red);
     box-shadow: .5px .5px 2px white;
 }
+.form button  a {
+    text-decoration: none;
+    color: white;
+}
+.form img {
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+}
+.form h1 {
+    margin: 0;
+    text-align: center;
+}
 .form > a {
-    margin-top: 1rem;
     text-align: center;
     color: white;
+    font-size: 20px;
+}
+@media all and (min-width: 768px) {
+    .form {
+        font-size: 18px;
+        width: 45%;
+    }
+    .form input,
+    .form label,
+    .form button,
+    .form a {
+        font-size: 18px;
+    }
+    
+}
+@media all and (min-width: 1000px) {
+    .form {
+        width: 35%;
+    }
 }

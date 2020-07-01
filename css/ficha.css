@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+.main {
+    margin: 90px;
+}
+.img-ficha {
+    width: 400px;
+    height: 100%;
+    display: inline-flex;
+    float: left;
+    margin-bottom: 1rem;
+}
+.descripcion {
+    padding: 10px;
+    font-size: 20px;
+    margin: auto;
+    color: #fff;
+}
+.informacion {
+    margin: 40px 0;
+    padding: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.lista-desc {
+    list-style: none;
+    padding:0 ;
+    margin: 0;
+    margin-left: 50px;
+}
+.lista-desc > li {
+    padding: 8px;
+}
+.sinopsis {
+    clear: both;
+    color: #fff;
+    word-spacing: .1rem;
+}
+.trailer {
+    color: #fff;
+    margin-top: 3rem;
+}
+.trailer > video {
+    margin: 0 auto;
+}
