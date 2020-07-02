@@ -4,6 +4,7 @@
     --navbar-height: 60px;
     --color-red: rgb(221, 42, 42);
     --color-dark: rgb(43, 42, 42);
+    --color-border: rgb(67, 66, 66);
 }
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     color: rgb(245, 245, 245);
-    border-bottom: 1px solid rgb(58, 57, 57);
+    border-bottom: 1px solid var(--color-border);
 }
 
 
@@ -32,16 +32,18 @@
 
 .destacado {
   width: 80%;
-  padding: 0 2rem .5rem 3rem;
-  border-left: 1px solid rgb(58, 57, 57);;
+  padding: 0 1rem .5rem 3rem;
 }
 .destacado h1 {
     padding: 0 0 .8rem 0;
 }
+.destacado img {
+    border-radius: 5px;
+}
 .grid-dest-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 225px));
-    grid-template-rows: auto;
+    grid-auto-rows: 1fr;
     gap: .6rem;
 }
 
@@ -51,14 +53,14 @@
     display: block;
     padding: 0 ;
     width:  20%;
-    border-left: 1px solid #3a3939;   
+    border-left: 1px solid var(--color-border);   
 }
 .genero ul {
     list-style: none;
 }
 .genero ul li {
     padding: 1rem;
-    border-bottom: 1px solid #3a3939;   
+    border-bottom: 1px solid var(--color-border);   
 }
 .genero h2 {
     text-align: center;
