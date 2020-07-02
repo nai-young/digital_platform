@@ -1,6 +1,6 @@
 .header {
-    margin: 60px auto 0 auto;
-    max-width: 90%;
+    margin: 80px auto 0 auto;
+    max-width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     flex-direction: row;
     height: 25px;   
     align-items: center;
-    padding: 1.5rem 3rem 2rem 3rem;
+    margin: 1rem 0 2rem 1rem;
 }
 .navbar-header > li {
     list-style: none;
@@ -31,20 +31,77 @@
 /* Destacado Grid */
 
 .destacado {
-  width: 80%;
-  padding: 0 1rem .5rem 3rem;
+  width: 75%;
+  padding: 0 1rem 1rem 1rem;
 }
 .destacado h1 {
-    padding: 0 0 .8rem 0;
+    padding: 0;
+}
+.destacado .icon-fire:before {
+    margin-right: .5rem;
+    color: red;
 }
 .destacado img {
     border-radius: 5px;
+    box-shadow: 0 19px 30px rgba(29, 29, 29, 0.3), 
+                0 15px 12px rgba(10, 10, 10, 0.22);
 }
 .grid-dest-container {
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 225px));
-    grid-auto-rows: 1fr;
-    gap: .6rem;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 210px));
+    grid-auto-rows: 1fr; 
+    gap: .5rem;
+    grid-auto-flow: dense;
+    
+}
+/* Hover Posters Effect */
+.poster {
+    border-radius: 5px;
+}
+.dest-poster {
+    position: relative;
+    z-index: 0;
+}
+.dest-poster img {
+    opacity: 1;
+    transition: .5s ease;
+  backface-visibility: hidden;
+}
+.dest-poster:hover .poster {
+    opacity: 0.3;
+    
+}
+.dest-poster:hover .resume-container {
+    opacity: .8;
+    border-radius: 5px;
+}
+.resume-container {
+    background-color: rgb(78, 78, 78);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+}
+.resume {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin: 1rem 1rem 0 1rem;
+    padding: .7rem;
+    border: .8px solid #fff;
+}
+.icon-heart {
+    color: var(--color-red);
+    font-size: 1.5rem;
+    margin: .5rem auto;
 }
 
 /* Género Tabla */
@@ -52,19 +109,33 @@
 .genero {
     display: block;
     padding: 0 ;
-    width:  20%;
+    max-width: 25%;
     border-left: 1px solid var(--color-border);   
 }
 .genero ul {
-    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   list-style: none;
 }
 .genero ul li {
+    display: flex;
+    align-items: center;
+    width: 50%;
     padding: 1rem;
+
     border-bottom: 1px solid var(--color-border);   
 }
 .genero h2 {
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.genero .icon-dot {
+    font-size: .7rem;
+    margin: 0 .5rem;
+    color: rgb(131, 129, 129);
 }
 /* Para pantallas pequeñas */
 
@@ -75,25 +146,22 @@
         margin: 60px auto;
     }
     .genero{
-        padding-left: 1rem;
         border: none;
-        width: 100%;
+        margin: 0 auto;
+        width: 60%;
        display: block;
-       
-        justify-content: center;
     }
     .genero ul {
-        margin: 1rem 0;
-        display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-        text-align: center;
+        margin: 3rem 0;
     }
     .genero ul li {
-        padding: .5rem;
+       width: 50%;
+        padding: .7rem 1rem .7rem 1rem;
     }
+    
     .genero > h2 {
-        margin-top: 3rem;
+        padding: 0;
+        margin: 0;
         width: 100%;
         text-align: center;
     }
@@ -113,10 +181,19 @@
         padding: 0;
     }
     .destacado h1 {
+        padding: 0;
         text-align: center;
-        padding: 1.5rem 0;
+        margin: 1rem 0;
     }
     .navbar-header {
-        margin-top: 3rem;
+        margin: 4rem 0 3rem 0 ;
+        padding: 0;
+        justify-content: center;
+        
+    }
+    .grid-dest-container {
+        justify-content: center;
+        width: auto;
+        padding-bottom: 3rem;
     }
 }

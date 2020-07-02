@@ -24,11 +24,12 @@ img {
 }
 .form {
     width: 45%;
-   
+    box-shadow: 0 19px 30px rgba(29, 29, 29, 0.3), 
+                0 15px 12px rgba(10, 10, 10, 0.22);
     display: flex;
     flex-direction: column;
     background-color: #2b2a2a;
-    padding: 15px;
+    padding: 2rem 4rem;
     color: white;
     border-radius: 10px;
     box-shadow: 1;
@@ -37,12 +38,18 @@ img {
     font-size: 20px;
     margin-top: .5rem;
     margin-bottom: 2rem;
-    border-radius: 5px;
+    background: none;
+    color: #fff;
+    padding: .3rem;
+    border: none;
+    border-bottom: .5px solid #fff;
 }
+
 .form label {
     font-size: 20px;
 }
 .form button {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.577);
     cursor: pointer;
     width: 40%;
     margin: 1.5rem auto;
@@ -51,7 +58,11 @@ img {
     border: none;
     padding: 10px;
     background-color: var(--color-red);
-    box-shadow: .5px .5px 2px white;
+    
+}
+.form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.44);
 }
 .form button  a {
     text-decoration: none;
@@ -63,8 +74,9 @@ img {
     margin: 0 auto;
 }
 .form h1 {
-    margin: 0;
+    margin: 1rem 0 2rem 0;
     text-align: center;
+    text-shadow:  5px 10px 15px rgba(0, 0, 0, 0.749);
 }
 .form > a {
     text-align: center;

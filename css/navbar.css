@@ -19,6 +19,7 @@ body {
 }
 
 .navbar {
+    z-index: 1;
     background-color: rgb(43, 42, 42);
     width: 100vw;
     height: var(--navbar-height);
@@ -27,7 +28,7 @@ body {
     left: 0;
     display: flex;
     justify-content:  space-between;
-    padding: 0 10px;
+    padding: 0 2.5rem;
 }
 .navbar .burger-label {
     width: 50px;
@@ -77,6 +78,9 @@ body {
         line-height: var(--navbar-height);
         padding: 0 .7rem;
     }
+    .navbar-item a:hover {
+        color: #000;
+    }
     .navbar-item {
         height: var(--navbar-height);
     }
@@ -99,7 +103,7 @@ body {
     }
     .navbar input[type="text"]{
         height: 50%;
-        width: 17%;
+        width: 15%;
         margin: auto 1.5rem;
         background-color: rgb(228, 226, 226);
         padding: 0 5px;
@@ -114,9 +118,19 @@ body {
     .navbar ul:last-of-type {
         line-height: var(--navbar-height);
         list-style: none;
+        
+    }
+    .navbar ul:last-of-type li {
+       display: flex;
+       align-items: center; 
     }
     .navbar ul:last-of-type > li > a{
-        color: rgb(221, 42, 42);
+        padding-right: .5rem;
+        border-radius: 5px;
         text-decoration: none;
+        color: red;
+    }
+    .icon-exit {
+        color: red;
     }
 }
