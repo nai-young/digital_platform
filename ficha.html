@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/destacados.css">
     <link rel="stylesheet" href="./css/icons.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Ficha</title>
 </head>
 <body>
@@ -30,41 +31,43 @@
     <header>
     </header>
     <main class="main">
-        <h1><i class="icon-info"></i> Ficha de información</h1>
         <section class="informacion">
-            
-            <div class="img-container">
-                <img src="./img/posters/star-wars.jpg" alt="ficha star wars" class="img-ficha">
+            <h1><i class="icon-info"></i> Ficha de información</h1>
+            <div class="info-cont">
+                <div class="img-container">
+                    <img src="./img/posters/star-wars.jpg" alt="ficha star wars" class="img-ficha">
+                </div>
+                <table class="descripcion">
+                    <tbody>
+                        <tr class="desc-item">
+                            <th>Título</th>
+                            <td>Star Wars:<br/>The Force Awakens</td>
+                        </tr>
+                        <tr class="desc-item">
+                            <th>Año publicación</th>
+                            <td>2015</td>
+                        </tr>
+                        <tr class="desc-item">
+                            <th>Calificación</th>
+                            <td> 
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-half"></i>
+                                <i class="icon-star"></i>
+                            </td>
+                        </tr>
+                        <tr class="desc-item">
+                            <th>País</th>
+                            <td>EEUU</td>
+                        </tr>
+                        <tr class="desc-item">
+                            <th>Director</th>
+                            <td>George Lucas</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
-            <table class="descripcion">
-                <tbody>
-                    <tr class="desc-item">
-                        <th>Título</th>
-                        <td>Star Wars:<br/>The Force Awakens</td>
-                    </tr>
-                    <tr class="desc-item">
-                        <th>Año publicación</th>
-                        <td>2015</td>
-                    </tr>
-                    <tr class="desc-item">
-                        <th>Calificación</th>
-                        <td> 
-                            <i class="icon-star-full"></i>
-                            <i class="icon-star-full"></i>
-                            <i class="icon-star-half"></i>
-                            <i class="icon-star"></i>
-                        </td>
-                    </tr>
-                    <tr class="desc-item">
-                        <th>País</th>
-                        <td>EEUU</td>
-                    </tr>
-                    <tr class="desc-item">
-                        <th>Director</th>
-                        <td>George Lucas</td>
-                    </tr>
-                </tbody>
-            </table>
 
         </section>
         <section class="sinopsis">
@@ -99,7 +102,7 @@
                     Your browser does not support the video.
             </video>
         </section>
-        <section class="relacionadas inverted">
+        <section class="relacionadas">
             <h2>Películas relacionadas</h2>
             <div class="grid-dest-container grid-rel-container">
                 <article class="dest-poster">
@@ -183,8 +186,22 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer inverted-footer">
+        <aside>
+            <ul class="social-list-footer">
+                <li class="social-item-footer"><i class="icon-facebook"></i> </li>
+                <li class="social-item-footer"><i class="icon-twitter"></i> </li>
+                <li class="social-item-footer"><i class="icon-instagram"></i> </li>
+                <li class="social-item-footer"><i class="icon-email"></i> </li>
+                <li class="social-item-footer"><i class="icon-rss"></i> </li>
+            </ul>
+        </aside>
+        <aside>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni culpa eligendi, porro aliquid at.
+            </p>
+            <small>Creado por <a href="https://github.com/nai_young"><i class="icon-github"></i> Naiche Lorenzana</a></small>
+        </aside>
     </footer>
 </body>
 </html>

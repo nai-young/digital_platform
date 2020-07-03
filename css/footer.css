@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Limelight&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+.footer {
+    color: #fff;
+    width: 100%;
+    padding: 2rem ;
+    box-shadow: 19px 0 30px rgba(29, 29, 29, 0.3), 
+                15px 0  12px rgba(10, 10, 10, 0.22);
+}
+.inverted-footer {
+    background-color:rgba(114, 114, 114, 0.303);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+.social-list-footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 300px;
+    list-style: none;
+    
+}
+.social-item-footer i{
+    font-size: 2rem;
+    color: var(--color-red);
+    
+}
+.footer p {
+  
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 300px;
+}
+.footer small {
+    font-family: Cinzel;
+   display: block;
+    text-align: center;
+}
+.footer small > a{
+    color: #fff;
+}

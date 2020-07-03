@@ -12,17 +12,23 @@ video {
     max-width: 100%;
 }
 .main {
+    width: 100%;
     margin: 8rem auto 0 auto;
-    max-width: calc( 400px - var(--max-width));
     padding: 0 3rem ;
 }
 .informacion {
     margin: 1rem auto;
     padding: 0;
-    width: 100%;
+    max-width: calc(var(--max-width) - 400px);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
+}
+.info-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .icon-info {
     margin-right: .5rem;
@@ -30,11 +36,14 @@ video {
 .main h1 {
     color: #fff;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
+
 .img-container {
     width: 40%;
     min-width: 240px;
     min-height: 320px;
+    margin: 0;
 }
 .img-ficha {
    width: 100%;
@@ -77,7 +86,9 @@ video {
 .relacionadas {
     color: #fff;
     flex: 1;
-    padding: 0 0 3rem 0;
+    padding: 1rem 0 3rem 0;
+    margin: 0 auto;
+    max-width: calc(var(--max-width) - 400px);
 }
 .grid-rel-container {
     display: flex;
@@ -92,15 +103,19 @@ video {
 .trailer {
     border-bottom: 1px solid var(--color-border);
     padding-bottom: 2rem;
+    max-width: calc(var(--max-width) - 400px);
+    margin: 0 auto;
 }
 .sinopsis {
-    clear: both;
     color: #fff;
     word-spacing: .1rem;
 }
+.sinopsis h2 {
+    margin: 2rem 0;
+}
 .trailer {
     color: #fff;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .trailer > video {
     display: flex;
@@ -117,13 +132,13 @@ video {
         padding: 0;
         margin-bottom: 0;
     }
-    .main > h1 {
-        width: 100%;
+    .main  h1 {
+        text-align: center;
     }
     h2 {
         text-align: center;
     }
-    .informacion {
+    .info-cont {
         display: flex;
         flex-direction: column;
         align-items: center;
