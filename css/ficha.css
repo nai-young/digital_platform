@@ -29,6 +29,7 @@ video {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 3rem;
 }
 .icon-info {
     margin-right: .5rem;
@@ -113,6 +114,9 @@ video {
 .sinopsis h2 {
     margin: 2rem 0;
 }
+.sinopsis p {
+    padding: 0 3rem;
+}
 .trailer {
     color: #fff;
     margin-top: 2rem;
@@ -142,11 +146,13 @@ video {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     .descripcion {
       min-width: 80%;
       display: flex;
       justify-content: center;
+      margin: 0;
     }
     .img-container {
         margin: 1rem 0 2rem 0;
