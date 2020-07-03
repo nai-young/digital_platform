@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?8wc8uc');
-  src:  url('../fonts/icomoon.eot?8wc8uc#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?8wc8uc') format('truetype'),
-    url('../fonts/icomoon.woff?8wc8uc') format('woff'),
-    url('../fonts/icomoon.svg?8wc8uc#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?ddyzka');
+  src:  url('../fonts/icomoon.eot?ddyzka#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ddyzka') format('truetype'),
+    url('../fonts/icomoon.woff?ddyzka') format('woff'),
+    url('../fonts/icomoon.svg?ddyzka#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-back:before {
+  content: "\e96a";
+}
 .icon-fire:before {
   content: "\e9a9";
 }
@@ -40,11 +43,17 @@
 .icon-heart:before {
   content: "\e9da";
 }
+.icon-info:before {
+  content: "\ea0c";
+}
 .icon-exit:before {
   content: "\ea14";
 }
 .icon-play:before {
   content: "\ea1c";
+}
+.icon-back2:before {
+  content: "\ea40";
 }
 .icon-dot:before {
   content: "\eae9";

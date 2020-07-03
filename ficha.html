@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/ficha.css">
+    <link rel="stylesheet" href="./css/destacados.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Ficha</title>
 </head>
 <body>
@@ -21,19 +24,23 @@
         </ul>
         <input type="text" value="Buscar...">
         <ul>
-            <li><a href="#">Log Out</a></li>
+            <li><a href="./index.html">Cerrar Sesión</a> <i class="icon-exit"></i> </li>
         </ul>
     </nav>
     <header>
     </header>
     <main class="main">
+        <h1><i class="icon-info"></i> Ficha de información</h1>
         <section class="informacion">
-            <img src="img/poster.jpg" alt="ficha star wars" class="img-ficha">
+            
+            <div class="img-container">
+                <img src="./img/posters/star-wars.jpg" alt="ficha star wars" class="img-ficha">
+            </div>
             <table class="descripcion">
                 <tbody>
                     <tr class="desc-item">
                         <th>Título</th>
-                        <td>Star Wars: The Force Awakens</td>
+                        <td>Star Wars:<br/>The Force Awakens</td>
                     </tr>
                     <tr class="desc-item">
                         <th>Año publicación</th>
@@ -41,7 +48,12 @@
                     </tr>
                     <tr class="desc-item">
                         <th>Calificación</th>
-                        <td>9.5</td>
+                        <td> 
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-half"></i>
+                            <i class="icon-star"></i>
+                        </td>
                     </tr>
                     <tr class="desc-item">
                         <th>País</th>
@@ -87,10 +99,87 @@
                     Your browser does not support the video.
             </video>
         </section>
-        <section>
+        <section class="relacionadas inverted">
             <h2>Películas relacionadas</h2>
-            <div>
-
+            <div class="grid-dest-container grid-rel-container">
+                <article class="dest-poster">
+                    <img class="poster" src="./img/posters/harry-potter.jpg" alt="star-wars" width="210" height="270">
+                    <div class="resume-container">
+                        <div class="resume">
+                            <h3>Harry Potter</h3>
+                            <p>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-half"></i>
+                                <i class="icon-star"></i>
+                            </p>
+                            <p>1990</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestiae ullam eius enim voluptatibus officiis nobis blanditiis.
+                            </p>
+                        </div>
+                        <i class="icon-heart"></i>
+                    </div>
+                </article>
+                <article class="dest-poster">
+                    <img class="poster" src="./img/posters/stranger-things.jpg" alt="star-wars" width="210" height="270">
+                    <div class="resume-container">
+                        <div class="resume">
+                            <h3>Harry Potter</h3>
+                            <p>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-half"></i>
+                                <i class="icon-star"></i>
+                            </p>
+                            <p>1990</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestiae ullam eius enim voluptatibus officiis nobis blanditiis.
+                            </p>
+                        </div>
+                        <i class="icon-heart"></i>
+                    </div>
+                </article>
+                <article class="dest-poster">
+                    <img class="poster" src="./img/posters/lucifer.jpg" alt="star-wars" width="210" height="270">
+                    <div class="resume-container">
+                        <div class="resume">
+                            <h3>Harry Potter</h3>
+                            <p>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-half"></i>
+                                <i class="icon-star"></i>
+                            </p>
+                            <p>1990</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestiae ullam eius enim voluptatibus officiis nobis blanditiis.
+                            </p>
+                        </div>
+                        <i class="icon-heart"></i>
+                    </div>
+                </article>
+                <article class="dest-poster">
+                    <img class="poster" src="./img/posters/harry-potter.jpg" alt="harry-potter" width="210" height="270">
+                    <div class="resume-container">
+                        <div class="resume">
+                            <h3>Harry Potter</h3>
+                            <p>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-full"></i>
+                                <i class="icon-star-half"></i>
+                                <i class="icon-star"></i>
+                            </p>
+                            <p>1990</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestiae ullam eius enim voluptatibus officiis nobis blanditiis.
+                            </p>
+                            
+                        </div>
+                        <i class="icon-heart"></i>
+                    </div>
+                </article>
+                
             </div>
         </section>
     </main>

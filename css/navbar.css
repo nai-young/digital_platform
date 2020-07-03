@@ -5,6 +5,7 @@
     --color-red: rgb(221, 42, 42);
     --color-dark: rgb(43, 42, 42);
     --color-border: rgb(67, 66, 66);
+    --max-width: 1300px;
 }
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,8 +28,9 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    align-items: center;
     justify-content:  space-between;
-    padding: 0 2.5rem;
+    padding: 0 2.5rem 0 1rem;
 }
 .navbar .burger-label {
     width: 50px;
@@ -44,10 +46,10 @@ body {
   .burger-label:before {
     content: '';
     background-color: rgb(43, 42, 42);
-    width: .8em;
-    height: 0.11em;
+    width: .7em;
+    height: 0.10em;
     position: absolute;
-    left: 0.15em;
+    left: 0.20em;
     top: 0.25em;
     box-shadow: 0 0.25em 0 0 rgb(43, 42, 42), 0 0.5em 0 0 rgb(43, 42, 42);
   }
@@ -62,6 +64,7 @@ body {
 .navbar ul:last-of-type {
     display: none;
 }
+
 
 @media all and (min-width: 768px) {
     .navbar-list {
@@ -118,6 +121,7 @@ body {
     .navbar ul:last-of-type {
         line-height: var(--navbar-height);
         list-style: none;
+        padding: 0;
         
     }
     .navbar ul:last-of-type li {

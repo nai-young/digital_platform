@@ -1,6 +1,7 @@
 .header {
     margin: 80px auto 0 auto;
-    max-width: 85%;
+    max-width: var(--max-width);
+    padding: 0 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,7 +10,7 @@
 }
 
 
-/* Ordenar Top Navbar */
+/* Ordenar Navbar */
 
 .navbar-header {
     width: 100%;
@@ -17,7 +18,7 @@
     flex-direction: row;
     height: 25px;   
     align-items: center;
-    margin: 1rem 0 2rem 1rem;
+    margin: 0 0 1rem 1rem;
 }
 .navbar-header > li {
     list-style: none;
@@ -32,7 +33,8 @@
 
 .destacado {
   width: 75%;
-  padding: 0 1rem 1rem 1rem;
+  background-color: rgba(65, 64, 64, 0.776);
+  padding: 1rem;
 }
 .destacado h1 {
     padding: 0;
@@ -53,8 +55,10 @@
     grid-auto-rows: 1fr; 
     gap: .5rem;
     grid-auto-flow: dense;
+    justify-content: center;
     
 }
+
 /* Hover Posters Effect */
 .poster {
     border-radius: 5px;
@@ -70,7 +74,6 @@
 }
 .dest-poster:hover .poster {
     opacity: 0.3;
-    
 }
 .dest-poster:hover .resume-container {
     opacity: .8;
@@ -97,6 +100,10 @@
     margin: 1rem 1rem 0 1rem;
     padding: .7rem;
     border: .8px solid #fff;
+}
+.resume > a {
+    color: #fff;
+    text-decoration: none;
 }
 .icon-heart {
     color: var(--color-red);
@@ -137,26 +144,40 @@
     margin: 0 .5rem;
     color: rgb(131, 129, 129);
 }
+
+@media all and (min-width: 768px) and (max-width: 935px) {
+    .genero {
+        min-width: 25%;
+    }
+    .genero ul {
+       
+        display: block;
+    }
+    .genero ul li {
+        padding: .9rem 2rem;
+        width: 100%;
+    }
+
+}
 /* Para pantallas pequeñas */
 
 @media all and (max-width: 768px) {
     .header {
         flex-direction: column;
-        max-width: 80%;
-        margin: 60px auto;
+        max-width: 60%;
+        margin: 60px auto 1rem auto;
     }
     .genero{
-        border: none;
+        border: none;   
         margin: 0 auto;
-        width: 60%;
-       display: block;
+       min-width: 100%;
     }
     .genero ul {
-        margin: 3rem 0;
+        margin:  2rem 0;
+        width: 100%;
     }
     .genero ul li {
        width: 50%;
-        padding: .7rem 1rem .7rem 1rem;
     }
     
     .genero > h2 {
@@ -176,17 +197,17 @@
     }
     
     .destacado {
-        max-width: 75%;
-        margin: 0 auto;
+        min-width: 100%;
+        margin: 1rem auto 2rem auto;
         padding: 0;
     }
     .destacado h1 {
         padding: 0;
         text-align: center;
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
     .navbar-header {
-        margin: 4rem 0 3rem 0 ;
+        margin: 4rem 0 2rem 0 ;
         padding: 0;
         justify-content: center;
         
@@ -196,4 +217,5 @@
         width: auto;
         padding-bottom: 3rem;
     }
+    .
 }
