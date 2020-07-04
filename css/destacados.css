@@ -1,14 +1,13 @@
 .header {
     margin: 80px auto 0 auto;
     max-width: var(--max-width);
-    padding: 0 3rem;
+    padding: 0 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     color: rgb(245, 245, 245);
     border-bottom: 1px solid var(--color-border);
 }
-
 
 /* Ordenar Navbar */
 
@@ -32,7 +31,7 @@
 /* Destacado Grid */
 
 .destacado {
-  width: 75%;
+  width: 80%;
   background-color: rgba(65, 64, 64, 0.776);
   padding: 1rem;
 }
@@ -56,10 +55,10 @@
     gap: .5rem;
     grid-auto-flow: dense;
     justify-content: center;
-    
 }
 
 /* Hover Posters Effect */
+
 .poster {
     border-radius: 5px;
 }
@@ -115,8 +114,8 @@
 
 .genero {
     display: block;
-    padding: 0 ;
-    max-width: 25%;
+    padding: 1rem 0 ;
+    max-width: 20%;
     border-left: 1px solid var(--color-border);   
 }
 .genero ul {
@@ -131,7 +130,7 @@
     display: flex;
     align-items: center;
     width: 50%;
-    padding: 1rem;
+    padding: 1rem .5rem;
     border-bottom: 1px solid var(--color-border);   
 }
 .genero ul li:hover {
@@ -156,9 +155,9 @@
     color: rgb(131, 129, 129);
 }
 
-@media all and (min-width: 768px) and (max-width: 935px) {
+@media all and (min-width: 769px) and (max-width: 1146px) {
     .genero {
-        min-width: 25%;
+        min-width: 20%;
     }
     .genero ul {
        
@@ -168,20 +167,23 @@
         padding: .9rem 2rem;
         width: 100%;
     }
-
 }
+
 /* Para pantallas pequeñas */
 
 @media all and (max-width: 768px) {
     .header {
+        padding: 0;
         flex-direction: column;
-        max-width: 60%;
+        max-width: 85%;
         margin: 60px auto 1rem auto;
     }
     .genero{
+        max-width: 400px;
+       
         border: none;   
         margin: 0 auto;
-       min-width: 100%;
+        font-size: 1.2rem;
     }
     .genero ul {
         margin:  2rem 0;
@@ -189,6 +191,7 @@
     }
     .genero ul li {
        width: 50%;
+       padding-left: 0;
     }
     
     .genero > h2 {
@@ -208,9 +211,10 @@
     }
     
     .destacado {
-        min-width: 100%;
+        min-width: 200px;
+        width: 100%;
         margin: 1rem auto 2rem auto;
-        padding: 0;
+        padding: 1re,;
     }
     .destacado h1 {
         padding: 0;
@@ -228,5 +232,4 @@
         width: auto;
         padding-bottom: 3rem;
     }
-    .
 }

@@ -54,9 +54,4 @@
 .icon-play {
     color: var(--color-red);
 }
-/* Pantallas pequeñas */
-
-@media all and (max-width: 768px) {
-
-}
 

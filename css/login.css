@@ -23,7 +23,7 @@ img {
     height: 100vh;
 }
 .form {
-    min-width: 50%;
+    min-width: 67%;
     box-shadow: 0 19px 30px rgba(29, 29, 29, 0.3), 
                 0 15px 12px rgba(10, 10, 10, 0.22);
     display: flex;
@@ -83,9 +83,12 @@ img {
     color: white;
     font-size: 20px;
 }
+/* Pantallas grandes */
+
 @media all and (min-width: 768px) {
     .form {
-        min-width: 40%;
+        max-width: 500px;
+        min-width: 500px;
     }
     
     
