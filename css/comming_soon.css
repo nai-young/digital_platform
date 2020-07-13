@@ -26,6 +26,7 @@
     width: 65%;
     background-color: transparent;
     padding-left: 2rem;
+    height: 70px;
 }
 
 /* Contador - Lanzamiento Section */
@@ -133,6 +134,7 @@
     cursor: pointer;
 }
 .suscribirse-left{
+   
     width: 70%;
     display: flex;
     flex-direction: column;

@@ -7,8 +7,6 @@
     mask: url("../img/heart-regular.svg") no-repeat center;
     -webkit-mask: url("../img/heart-regular.svg") no-repeat center;
     background-color: var(--color-red);
-    box-shadow: 0 19px 30px rgba(29, 29, 29, 0.851), 
-                0 15px 12px rgba(10, 10, 10, 0.872);
 }
 /* .fav-label::before {
     content: url("./heart-regular.svg");
@@ -29,14 +27,12 @@
     mask: url("../img/heart-solid.svg") no-repeat center;
     -webkit-mask: url("../img/heart-solid.svg") no-repeat center;
     display: block;
-    box-shadow: 0 19px 30px rgba(29, 29, 29, 0.721), 
-                0 15px 12px rgba(10, 10, 10, 0.728);
+
 }
 .fav-label {
     display: none;
 }
 .dest-poster:hover .fav-label{
-    box-shadow: 0 19px 30px rgba(29, 29, 29, 0.934), 
-                0 15px 12px rgba(10, 10, 10, 0.893);
+ 
     display: block;
 }
